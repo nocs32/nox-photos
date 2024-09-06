@@ -2,6 +2,8 @@
 
 NOX Photos is a modern photo-sharing platform built with cutting-edge web technologies, designed to provide a seamless user experience for sharing and viewing photos. The platform offers user authentication, dynamic photo galleries, and a sleek, responsive interface.
 
+Website: https://photos.timnox.dev/
+
 ## 🔧 Key Features
 - **User Authentication**: Secure user authentication powered by NextAuth for seamless login and registration.
 - **Photo Galleries**: Dynamically generated photo galleries, allowing users to upload, manage, and view photos.
