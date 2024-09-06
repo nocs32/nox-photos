@@ -14,6 +14,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { Error } from "@/components/error";
+import { UploadButton } from "@/lib/uploadthing";
+import { createPost } from "@/lib/actions";
 
 export default function CreatePage() {
     const pathname = usePathname();
@@ -72,7 +74,7 @@ export default function CreatePage() {
                                             <FormItem>
                                                 <FormLabel htmlFor="picture">Picture</FormLabel>
                                                 <FormControl>
-                                                    {/* <UploadButton
+                                                    <UploadButton
                                                         endpoint="imageUploader"
                                                         onClientUploadComplete={(res) => {
                                                             form.setValue("fileUrl", res[0].url);
@@ -82,7 +84,7 @@ export default function CreatePage() {
                                                             console.error(error);
                                                             toast.error("Upload failed");
                                                         }}
-                                                    /> */}
+                                                    />
                                                 </FormControl>
                                                 <FormDescription>
                                                     Upload a picture to post.

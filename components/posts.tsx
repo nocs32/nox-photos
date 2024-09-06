@@ -1,5 +1,14 @@
-export function Posts() {
+import { fetchPosts } from "@/lib/data"
+import { Post } from "./post"
+
+export async function Posts() {
+    const posts = await fetchPosts()
+
     return (
-        <div>Posts</div>
+        <>
+            {posts.map((post) => (
+                <Post key={post.id} post={post} />
+            ))}
+        </>
     )
 }
